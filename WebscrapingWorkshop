@@ -104,7 +104,11 @@ Python wrapper is another option for accessing an API:
 - Set of functions that "wrap" the API code for ease of use
 - Potentially simplifies your code
 - But, wrapper could have bugs or be out-of-date or poorly documented
-'''
+
+
+
+
+
 
 
 '''
@@ -179,16 +183,23 @@ EXERCISE ONE
 '''
 
 # find the 'h2' tag and then print its text
+b.find(name='h2').text
 
 # find the 'p' tag with an 'id' value of 'feedback' and then print its text
+b.find(name='p', attrs={'id':'feedback'}).text
 
 # find the first 'p' tag and then print the value of the 'id' attribute
+b.find(name='p')['id']
 
 # print the text of all four resources
-
+results = b.find_all(name='li')
+for tag in results:
+    print tag.text
 
 # print the text of only the API resources
-
+results = b.find(name='ul', attrs={'id':'api'}).find_all(name='li')
+for tag in results:
+    print tag.text
 
 '''
 Scraping the IMDb website
@@ -221,11 +232,14 @@ EXERCISE TWO
 '''
 
 # get the description
+b.find(name='p', attrs={'itemprop':'description'}).text.strip()
 
 # get the content rating
+b.find(name='meta', attrs={'itemprop':'contentRating'})['content']
 
 # get the duration in minutes (as an integer)
-
+int(b.find(name='time', attrs={'itemprop':'duration'}).text.strip()[:-4])
+int(b.find(name='time', attrs={'itemprop':'duration'})['datetime'][2:-1])
 
 '''
 OPTIONAL WEB SCRAPING HOMEWORK
@@ -322,7 +336,7 @@ for tag in results:
 
 '''
 Useful to know: Alternative Beautiful Soup syntax
-'''
+''
 
 # read the example web page again
 with open('example.html', 'rU') as f:
