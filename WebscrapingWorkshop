@@ -183,23 +183,16 @@ EXERCISE ONE
 '''
 
 # find the 'h2' tag and then print its text
-b.find(name='h2').text
 
 # find the 'p' tag with an 'id' value of 'feedback' and then print its text
-b.find(name='p', attrs={'id':'feedback'}).text
 
 # find the first 'p' tag and then print the value of the 'id' attribute
-b.find(name='p')['id']
 
 # print the text of all four resources
-results = b.find_all(name='li')
-for tag in results:
-    print tag.text
+
 
 # print the text of only the API resources
-results = b.find(name='ul', attrs={'id':'api'}).find_all(name='li')
-for tag in results:
-    print tag.text
+
 
 '''
 Scraping the IMDb website
@@ -232,17 +225,13 @@ EXERCISE TWO
 '''
 
 # get the description
-b.find(name='p', attrs={'itemprop':'description'}).text.strip()
 
 # get the content rating
-b.find(name='meta', attrs={'itemprop':'contentRating'})['content']
 
 # get the duration in minutes (as an integer)
-int(b.find(name='time', attrs={'itemprop':'duration'}).text.strip()[:-4])
-int(b.find(name='time', attrs={'itemprop':'duration'})['datetime'][2:-1])
 
 '''
-OPTIONAL WEB SCRAPING HOMEWORK
+OPTIONAL WEB SCRAPING EXERCISES
 First, define a function that accepts an IMDb ID and returns a dictionary of
 movie information: title, star_rating, description, content_rating, duration.
 The function should gather this information by scraping the IMDb website, not
