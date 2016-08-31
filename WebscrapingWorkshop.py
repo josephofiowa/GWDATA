@@ -110,7 +110,7 @@ Python wrapper is another option for accessing an API:
 
 
 
-
+***THE FOLLOWING IS NOW DEPRECATED AS IMDB CHANGED THEIR WEB LAYOUT***
 
 CLASS: Web Scraping with Beautiful Soup
 What is web scraping?
