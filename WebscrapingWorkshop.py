@@ -13,7 +13,8 @@ How to interact with a REST API:
 
 # read IMDb data into a DataFrame: we want a year column!
 import pandas as pd
-movies = pd.read_csv('imdb_1000.csv')
+# movies = pd.read_csv('imdb_1000.csv')
+movies = pd.read_csv('https://raw.githubusercontent.com/josephnelson93/GWDATA/master/imdb_1000.csv')
 movies.head()
 
 # use requests library to interact with a URL
