@@ -398,3 +398,4 @@ b.find('p', 'topic')                        # if you don't name it, it's assumed
 b.find_all(name='p')    # normal way
 b.findAll(name='p')     # old function name from Beautiful Soup 3
 b('p')                  # if you don't name the method, it's assumed to be find_all
+
