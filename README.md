@@ -1,6 +1,6 @@
 # Workshops
 
-! [](https://creativeservices.gwu.edu/sites/creativeservices.gwu.edu/files/image/gw_atx_4cp_pos.png)
+![](https://creativeservices.gwu.edu/sites/creativeservices.gwu.edu/files/image/gw_atx_4cp_pos.png)
 
 Workshops offered for GW's Master's of Data Science Program, as well as elsewhere.
 
