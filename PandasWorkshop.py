@@ -2,7 +2,7 @@
 
 # -*- coding: utf-8 -*-
 """
-Created on Wed Nov 18 17:57:56 2015
+Created on Wed Nov 18 17:57:56 2015, Most recently updated 2/4/17
 
 @author: jnelson
 """
@@ -30,7 +30,7 @@ Reading Files, Selecting Columns, and Summarizing
 
 # can read a file from local computer or directly from a URL
 # pd.read_table('u.user')
-users = pd.read_table('https://raw.githubusercontent.com/justmarkham/DAT8/master/data/u.user', sep='|', index_col='user_id')
+users = pd.read_table('https://raw.githubusercontent.com/josephofiowa/DAT8/master/data/u.user', sep='|', index_col='user_id')
 
 # read 'u.user' into 'users'
 users = pd.read_table('u.user', sep='|', index_col='user_id')
