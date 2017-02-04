@@ -21,3 +21,7 @@ Intro to Data Visualization Using Python
 ## Webscraping
 
 Intro to Webscraping Using Python
+
+# Entropy
+
+Join the DC data science community. [Signup for Entropy](https://www.josephofiowa.com/entropy/)
