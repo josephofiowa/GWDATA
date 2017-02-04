@@ -8,6 +8,37 @@ The above site is _probably_ the closest one could come to making a website with
 
 Credits and thanks to the creators of the template [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat). Thanks to [David Miller](http://davidmiller.io/) of [Blackrock Digital](http://blackrockdigital.io/) for maintaining [Start Bootstrap](http://getbootstrap.com/).
 
+## Updating your live page
+
+To update your live page, you need to tell git to track your files, and push them up to your remote repository. This requires being in the working directory where your site exists on your local machine. In other words, navigate in the terminal to the folder containing all of your site's work.
+
+First, tell Github to track the files you have in your repository.
+
+```bash
+git add .
+```
+
+Add your commit message for those specific changes.
+
+Then:
+
+```
+git commit -m "this is my commit message; you should write your own"
+```
+
+Push those changes up to Github!
+
+Then:
+
+```
+git push
+```
+
+You may be prompted to enter your password. I recommend [setting up SSH keys](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/).
+
+
+
+
 ## Useful Getting Started Resources
 
 I'm an educator. I found these resources useful when creating a Bootstrap page using Github Pages. You will too:
