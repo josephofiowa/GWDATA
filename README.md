@@ -25,3 +25,7 @@ Intro to Webscraping Using Python
 # Entropy
 
 Join the DC data science community. [Signup for Entropy](https://www.josephofiowa.com/entropy/)
+
+## Example
+
+Here's an applied exmaple of data science: [What Fake News Says About Obama's Presidency](https://medium.com/@josephofiowa/what-real-fake-news-says-about-obamas-presidency-4bf42be71ff1#.rmqmhatq5)
