@@ -17,3 +17,7 @@ Intro to Data Analysis Using Python
 ## Entropy
 
 Learn more data science. Join [Entropy](https://www.josephofiowa.com/entropy])
+
+## Resources and Fun
+
+Intro reading [Obama v The Onion](https://medium.com/@josephofiowa/what-real-fake-news-says-about-obamas-presidency-4bf42be71ff1) and the open source [data and code](https://github.com/josephofiowa/zenzic/tree/master/obama-onion) that got me there.
