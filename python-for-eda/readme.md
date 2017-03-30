@@ -6,7 +6,7 @@ Workshops offered for GW's Master's of Data Science Program, as well as elsewher
 
 # Requirements
 
-Install the Anaconda IDE [here](continuum.io/downloads). This is currently written to support Python 2.7, so please download the graphical installer with Python 2.7 for your respective OS.
+Install the Anaconda IDE [here](https://continuum.io/downloads). This is currently written to support Python 2.7, so please download the graphical installer with Python 2.7 for your respective OS.
 
 (Recommended) Create a Github account [here](https://github.com/).
 
