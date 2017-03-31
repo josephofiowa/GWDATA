@@ -2,7 +2,7 @@
 
 # -*- coding: utf-8 -*-
 """
-Created on Wed Nov 18 17:57:56 2015, Most recently updated 2/4/17
+Created on Wed Nov 18 17:57:56 2015, Most recently updated 3/30/17
 
 @author: jnelson
 """
@@ -110,8 +110,8 @@ users[(users.age < 20) | (users.age > 60)]          # pipe for OR condition
 
 # sorting
 users.age.order()                   # sort a column
-users.sort('age')                   # sort a DataFrame by a single column
-users.sort('age', ascending=False)  # use descending order instead
+users.sort_by(how='age')                   # sort a DataFrame by a single column
+users.sort_by(how='age', ascending=False)  # use descending order instead
 
 '''
 EXERCISE TWO
@@ -197,6 +197,7 @@ EXERCISE THREE
 '''
 
 # read ufo.csv into a DataFrame called 'ufo'
+# https://raw.githubusercontent.com/josephofiowa/DAT8/master/data/ufo.csv
 
 # 
 # check the shape of the DataFrame
@@ -240,7 +241,7 @@ drinks.groupby('continent').beer.describe()
 
 # similar, but outputs a DataFrame and can be customized
 drinks.groupby('continent').beer.agg(['count', 'mean', 'min', 'max'])
-drinks.groupby('continent').beer.agg(['count', 'mean', 'min', 'max']).sort('mean')
+drinks.groupby('continent').beer.agg(['count', 'mean', 'min', 'max']).sort_by(how='mean')
 
 # if you don't specify a column to which the aggregation function should be applied,
 # it will be applied to all numeric columns
